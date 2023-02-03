@@ -1,8 +1,8 @@
 <template>
-    <div class="sidebar-slide">
+    <aside class="sidebar-slide">
         <div class="sidebar-slide-heading"></div>
         summary
-    </div>
+    </aside>
 </template>
 
 <script>

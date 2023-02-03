@@ -1,3 +1,3 @@
 <template>
-    <div class="overview">OverView</div>
+    <div>OverView</div>
 </template>

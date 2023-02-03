@@ -1,12 +1,10 @@
 <template>
   <div class="home">
-      <img alt="Vue logo" src="../assets/logo.png">
-      <div class="siderbar">
-          <SideBar></SideBar>
-      </div>
+      <side-bar-fixed></side-bar-fixed>
+      <side-bar-slide></side-bar-slide>
       <div class="main-wrapper">
           <Header msg="Welcome to Your Vue.js App"/>
-          <SettingBox></SettingBox>
+          <router-view></router-view>
           <Footer></Footer>
       </div>
   </div>
@@ -14,17 +12,17 @@
 
 <script>
 // @ is an alias to /src
+import SideBarFixed from '@/components/SideBarFixed.vue';
+import SideBarSlide from '@/components/SideBarSlide.vue';
 import Header from '@/components/Header.vue';
-import SideBar from '@/components/SideBar.vue';
-import SettingBox from '@/components/SettingBox.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
     name: 'Home',
     components: {
+        SideBarFixed,
+        SideBarSlide,
         Header,
-        SideBar,
-        SettingBox,
         Footer,
     },
 };
@@ -35,5 +33,9 @@ export default {
       display: flex;
       height: 100%;
       position: relative;
+  }
+  .main-wrapper {
+      width: 100%;
+      min-height:100%;
   }
 </style>
