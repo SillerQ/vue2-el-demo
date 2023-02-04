@@ -4,7 +4,7 @@
       <side-bar-slide></side-bar-slide>
       <div class="main-wrapper">
           <Header msg="Welcome to Your Vue.js App"/>
-          <router-view></router-view>
+          <!-- <router-view></router-view> -->
           <Footer></Footer>
       </div>
   </div>
