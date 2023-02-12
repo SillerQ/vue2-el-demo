@@ -16,5 +16,6 @@ module.exports = {
         'vue/multi-word-component-names': 'off',
         indent: ['error', 4],
         'max-len': 'off',
+        'import/extensions': 'off',
     },
 };
